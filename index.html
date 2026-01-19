@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Istak Shaikh Portfolio</title>
+  <meta name="description" content="Istak Shaikh. — FlutterFlow Developer building production cross-platform apps (iOS, Android, Web & Desktop). UI/UX, custom functions, Firebase, REST APIs, offline caching and Play Store deployments." />
+  
+  <!-- Favicon & Fonts -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Istak Shaikh. — FlutterFlow Developer Portfolio" />
+  <meta property="og:description" content="Production FlutterFlow apps on Google Play — UI, custom functions, Firebase, REST APIs, deployments." />
+  <meta property="og:image" content="assets/preview.png" />
+</head>
+
+<body>
+  <!-- Loading Animation -->
+  <div class="loader">
+    <div class="loader-content">
+      <div class="loader-spinner">
+        <div class="spinner-ring"></div>
+        <div class="spinner-dot"></div>
+      </div>
+      <div class="loader-text">
+        <span class="loader-name">Istak Iqbal Shaikh.</span>
+        <span class="loader-tag">FlutterFlow Developer</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cursor Effect -->
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
+  <div class="site">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <div class="brand">
+            <a href="/" class="brand-link">
+              <span class="brand-icon"><i class="fas fa-code"></i></span>
+              <span class="brand-name">Istak<span class="brand-highlight">Shaikh</span></span>
+            </a>
+          </div>
+
+          <div class="nav-menu">
+            <ul class="nav-links">
+              <li><a href="#home" class="nav-link active" data-nav-link>Home</a></li>
+              <li><a href="#about" class="nav-link" data-nav-link>About</a></li>
+              <li><a href="#projects" class="nav-link" data-nav-link>Projects</a></li>
+              <li><a href="#skills" class="nav-link" data-nav-link>Skills</a></li>
+              <li><a href="#contact" class="nav-link" data-nav-link>Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+              <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" data-theme-toggle>
+                <i class="fas fa-moon theme-icon"></i>
+                <span class="theme-text">Dark</span>
+              </button>
+              <a class="btn btn-primary btn-resume" href="assets/resume.pdf" download>
+                <i class="fas fa-download"></i>
+                <span>Resume</span>
+              </a>
+              <button class="menu-toggle" aria-label="Menu" data-menu-toggle>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" data-mobile-menu>
+      <div class="mobile-menu-header">
+        <button class="menu-close" data-menu-close><i class="fas fa-times"></i></button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link active"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about" class="mobile-nav-link"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#projects" class="mobile-nav-link"><i class="fas fa-briefcase"></i> Projects</a></li>
+        <li><a href="#skills" class="mobile-nav-link"><i class="fas fa-cogs"></i> Skills</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <div class="social-links">
+          <a href="https://github.com/yourusername" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/yourusername" target="_blank" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://play.google.com/store/apps/dev?id=YOUR_ID" target="_blank" class="social-link">
+            <i class="fab fa-google-play"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero reveal">
+      <div class="hero-background">
+        <canvas id="particles-canvas"></canvas>
+        <div class="gradient-circle circle-1"></div>
+        <div class="gradient-circle circle-2"></div>
+        <div class="gradient-circle circle-3"></div>
+      </div>
+      
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge pulse">
+            <i class="fas fa-bolt"></i>
+            <span>Hi</span>
+          </div>
+          
+          <h1 class="hero-title">
+            <span class="title-line">FlutterFlow</span>
+            <span class="title-line highlight">Developer</span>
+            <span class="title-line">Application Developer</span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            I'm <strong>Istak.</strong>, a FlutterFlow Developer building and maintaining cross-platform applications (iOS, Android, Web & Desktop). I ship end-to-end features — from pixel-perfect screens and custom widgets to Firebase & REST integrations, offline caching, and Play Store releases.
+          </p>
+
+          <!-- <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number" data-count="4">0</span>
+              <span class="stat-label">Projects Deployed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="4">0</span>
+              <span class="stat-label">Play Store Apps</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="24">0</span>
+              <span class="stat-label">Hour Support</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="100">0</span>
+              <span class="stat-label">% Satisfaction</span>
+            </div>
+          </div> -->
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-lg btn-icon">
+              <i class="fas fa-rocket"></i>
+              <span>View Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-outline btn-lg btn-icon">
+              <i class="fas fa-paper-plane"></i>
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Create. Ship. <span class="highlight">Repeat.</span></h2>
+          <p class="section-subtitle">FlutterFlow development from concept to deployment</p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-paragraph">
+              I'm a passionate FlutterFlow Developer with 1 year of hands-on experience at a fast-paced startup. I specialize in building production-ready cross-platform applications that are fast, reliable, and user-friendly. My expertise covers the entire development lifecycle — from UI/UX design and implementation in FlutterFlow to custom Dart functions, backend integrations, and Deployments.
+            </p>
+            
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3 class="service-title">UI/UX Design</h3>
+                <p class="service-desc">Creating intuitive, beautiful, responsive interfaces optimized for performance across all devices.</p>
+              </div>
+              
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <h3 class="service-title">Custom Development</h3>
+                <p class="service-desc">Custom Dart functions, reusable widgets, and complex workflows in FlutterFlow and Flutter.</p>
+              </div>
+              
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <h3 class="service-title">Backend Integration</h3>
+                <p class="service-desc">Firebase services (Auth, Firestore, Storage, FCM), REST APIs, secure JSON handling and authentication flows.</p>
+              </div>
+              
+              <div class="service-card">
+                <div class="service-icon">
+                  <i class="fas fa-rocket"></i>
+                </div>
+                <h3 class="service-title">Deployment</h3>
+                <p class="service-desc">Play Store, Microsoft Store, and App Store release management.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Portfolio</span>
+          <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+         <!-- <p class="section-subtitle">⚠️ Overview only; full project materials are confidential.</p>  -->
+        </div>
+
+        <div class="projects-grid">
+          <!-- E-School Documents -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/screenshots/eschool-documents/logo.png" alt="E-School Documents" loading="lazy">
+              <div class="project-overlay">
+                <a href="projects/eschool-documents.html" class="project-link">
+                  <i class="fas fa-eye"></i>
+                  View Details
+                </a>
+              </div>
+            </div>
+            
+            <div class="project-content">
+              <div class="project-badges">
+                <span class="project-badge badge-featured">Featured</span>
+                <span class="project-badge badge-firebase">Flutter</span>
+                <span class="project-badge badge-offline">REST APIs</span>
+              </div>
+              
+              <h3 class="project-title">E-School Documents</h3>
+              <p class="project-desc">A dedicated app for schools to organize and access official documents. Category & year-wise listings, integrated PDF viewer with full-text search, and lightweight UI for fast lookups on low-end devices.</p>
+              
+              <div class="project-features">
+                <span class="feature">
+                  <i class="fas fa-search"></i>
+                  Full-text Search
+                </span>
+                <span class="feature">
+                  <i class="fas fa-database"></i>
+                  Document Management
+                </span>
+                <span class="feature">
+                  <i class="fas fa-cloud"></i>
+                  Digital Documents
+                </span>
+              </div>
+              
+              <div class="project-actions">
+                <a href="projects/eschool-documents.html" class="btn btn-secondary btn-sm">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.app.generalregister" target="_blank" class="btn btn-primary btn-sm">
+                  <i class="fab fa-google-play"></i>
+                  Play Store
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Seva Book -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/screenshots/seva-book/logo.png" alt="Seva Book" loading="lazy">
+              <div class="project-overlay">
+                <a href="projects/seva-book.html" class="project-link">
+                  <i class="fas fa-eye"></i>
+                  View Details
+                </a>
+              </div>
+            </div>
+            
+            <div class="project-content">
+              <div class="project-badges">
+                <span class="project-badge badge-sync">Sync</span>
+                <span class="project-badge badge-localdb">Local DB</span>
+              </div>
+              
+              <h3 class="project-title">Seva Book</h3>
+              <p class="project-desc">A digital teacher service log to replace paper-based diaries. Clean UI for non-technical users, fast listing & search, and local DB for reliable offline access while keeping user data private.</p>
+              
+              <div class="project-features">
+                <span class="feature">
+                  <i class="fas fa-sync-alt"></i>
+                  Document Management
+                </span>
+                <span class="feature">
+                  <i class="fas fa-mobile-alt"></i>
+                  Lightweight App
+                </span>
+                <span class="feature">
+                  <i class="fas fa-bell"></i>
+                  FCM Notifications
+                </span>
+              </div>
+              
+              <div class="project-actions">
+                <a href="projects/seva-book.html" class="btn btn-secondary btn-sm">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.tsm.bookseva" target="_blank" class="btn btn-primary btn-sm">
+                  <i class="fab fa-google-play"></i>
+                  Play Store
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Digital Gram -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/screenshots/digital-gram/logo.png" alt="Digital Gram" loading="lazy">
+              <div class="project-overlay">
+                <a href="projects/digital-gram.html" class="project-link">
+                  <i class="fas fa-eye"></i>
+                  View Details
+                </a>
+              </div>
+            </div>
+            
+            <div class="project-content">
+              <div class="project-badges">
+                <span class="project-badge badge-search">Search</span>
+                <span class="project-badge badge-category">Categories</span>
+              </div>
+              
+              <h3 class="project-title">Digital Gram</h3>
+              <p class="project-desc">Document management for Gram Panchayats — category and year-wise organization, in-app document viewer with full-text search, and fast, minimal UI built for quick lookups.</p>
+              
+              <div class="project-features">
+                <span class="feature">
+                  <i class="fas fa-folder"></i>
+                  Categories
+                </span>
+                <span class="feature">
+                  <i class="fas fa-search"></i>
+                  Instant Search
+                </span>
+                <span class="feature">
+                  <i class="fas fa-file-pdf"></i>
+                  PDF Viewer
+                </span>
+              </div>
+              
+              <div class="project-actions">
+                <a href="projects/digital-gram.html" class="btn btn-secondary btn-sm">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.tsm.digitalgram" target="_blank" class="btn btn-primary btn-sm">
+                  <i class="fab fa-google-play"></i>
+                  Play Store
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- MIST -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/screenshots/mist-migration/01-student-list.png" alt="MIST Migration" loading="lazy">
+              <div class="project-overlay">
+                <a href="projects/mist-migration.html" class="project-link">
+                  <i class="fas fa-eye"></i>
+                  View Details
+                </a>
+              </div>
+            </div>
+            
+            <div class="project-content">
+              <div class="project-badges">
+                <span class="project-badge badge-attendance">Attendance</span>
+                <span class="project-badge badge-offline">Offline</span>
+              </div>
+              
+              <h3 class="project-title">MIST — Migration Students</h3>
+              <p class="project-desc">School management and attendance app for teachers and administrators. Student profile management, attendance marking, summary reports, and offline-first attendance capture.</p>
+              
+              <div class="project-features">
+                <span class="feature">
+                  <i class="fas fa-user-check"></i>
+                  Attendance
+                </span>
+                <span class="feature">
+                  <i class="fas fa-chart-bar"></i>
+                  Reports
+                </span>
+                <span class="feature">
+                  <i class="fas fa-wifi-slash"></i>
+                  Offline Mode
+                </span>
+              </div>
+              
+              <div class="project-actions">
+                <a href="projects/mist-migration.html" class="btn btn-secondary btn-sm">
+                  <i class="fas fa-info-circle"></i>
+                  Details
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.tsm.migrationkolhapur" target="_blank" class="btn btn-primary btn-sm">
+                  <i class="fab fa-google-play"></i>
+                  Play Store
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-footer">
+          <a href="#contact" class="btn btn-outline btn-icon">
+            <i class="fas fa-plus"></i>
+            Start Your Project
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Expertise</span>
+          <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+          <p class="section-subtitle">Comprehensive FlutterFlow development stack</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <div class="skill-icon">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <h3>Core Platform</h3>
+            </div>
+            <div class="skill-items">
+              <span class="skill-item">FlutterFlow</span>
+              <span class="skill-item">Flutter</span>
+              <span class="skill-item">Dart Programming</span>
+              <span class="skill-item">Custom Functions</span>
+              <span class="skill-item">Custom Widgets</span>
+              <span class="skill-item">UI/UX Design</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Backend & APIs</h3>
+            </div>
+            <div class="skill-items">
+              <span class="skill-item">Firebase Integration</span>
+              <span class="skill-item">REST API Integration</span>
+              <span class="skill-item">Firestore Database</span>
+              <span class="skill-item">Firebase Auth</span>
+              <span class="skill-item">Cloud Messaging (FCM)</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <div class="skill-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>App Features</h3>
+            </div>
+            <div class="skill-items">
+              <span class="skill-item">Local Database</span>
+              <span class="skill-item">Offline Caching & Sync</span>
+              <span class="skill-item">Push Notifications</span>
+              <span class="skill-item">PDF & File Viewer</span>
+              <span class="skill-item">Responsive Design</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <div class="skill-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3>Deployment</h3>
+            </div>
+            <div class="skill-items">
+              <span class="skill-item">Store Deployment</span>
+              <span class="skill-item">App Bundles</span>
+              <span class="skill-item">App Signing & Releases</span>
+              <span class="skill-item">Store Listing Optimization</span>
+              <span class="skill-item">Post-release Monitoring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact reveal">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="section-header">
+              <span class="section-label">Get in Touch</span>
+              <h2 class="section-title">Let's Build <span class="highlight">Together</span></h2>
+              <p class="section-subtitle">Ready to bring your app idea to life? Let's discuss your project.</p>
+            </div>
+
+            <div class="contact-methods">
+              <a href="mailto:istakshaikh313@gmail.com" class="contact-method">
+                <div class="contact-method-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-method-content">
+                  <span class="contact-method-label">Email</span>
+                  <span class="contact-method-value">istakshaikh313@gmail.com</span>
+                </div>
+              </a>
+
+              <div class="contact-method">
+                <div class="contact-method-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-method-content">
+                    <span class="contact-method-label">Contact</span>
+                    <!-- Make the phone number clickable -->
+                    <a href="tel:+917040804686" class="contact-method-value">+91 7040804686</a>
+                </div>
+            </div>
+            
+
+              <!-- <div class="contact-method">
+                <div class="contact-method-icon">
+                  <i class="fas fa-tools"></i>
+                </div>
+                <div class="contact-method-content">
+                  <span class="contact-method-label">Tools</span>
+                  <span class="contact-method-value">GitHub · Android Studio · Play Console</span>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/yourusername" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <!-- <a href="https://twitter.com/yourusername" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://play.google.com/store/apps/dev?id=YOUR_ID" target="_blank" class="social-link">
+                <i class="fab fa-google-play"></i>
+              </a> -->
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <!-- <form class="contact-form" id="contact-form" action="https://formspree.io/f/xyzabcde" method="POST">
+              <div class="form-group">
+                <label class="form-label">
+                  <span>Your Name</span>
+                  <input type="text" name="name" placeholder="John Doe" required>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">
+                  <span>Email Address</span>
+                  <input type="email" name="email" placeholder="john@example.com" required>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">
+                  <span>Project Type</span>
+                  <select name="project-type" required>
+                    <option value="" disabled selected>Select project type</option>
+                    <option value="new">New App Development</option>
+                    <option value="existing">Existing App Enhancement</option>
+                    <option value="integration">API/Firebase Integration</option>
+                    <option value="deployment">Play Store Deployment</option>
+                    <option value="other">Other</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">
+                  <span>Project Details</span>
+                  <textarea name="message" rows="4" placeholder="Tell me about your project, timeline, and budget..." required></textarea>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="/" class="brand-link">
+              <span class="brand-icon"><i class="fas fa-code"></i></span>
+              <span class="brand-name">FlutterFlow<span class="brand-highlight">Dev</span></span>
+            </a>
+            <p class="footer-tagline">Building production-ready cross-platform applications with FlutterFlow</p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-link-group">
+              <h4>Navigation</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-link-group">
+              <h4>Projects</h4>
+              <ul>
+                <li><a href="projects/eschool-documents.html">E-School Documents</a></li>
+                <li><a href="projects/seva-book.html">Seva Book</a></li>
+                <li><a href="projects/digital-gram.html">Digital Gram</a></li>
+                <li><a href="projects/mist-migration.html">MIST Migration</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            © <span id="current-year">2026</span> Istak Iqbal Shaikh. All rights reserved.
+          </p>
+          <p class="footer-cta">
+            Ready to start your project? <a href="#contact">Get in touch today</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to top" data-back-to-top>
+      <i class="fas fa-chevron-up"></i>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

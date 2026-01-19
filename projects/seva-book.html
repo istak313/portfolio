@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seva Book — FlutterFlow Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../project-styles.css">
+</head>
+
+<body class="project-page seva">
+  <!-- Navigation -->
+  <nav class="project-nav">
+    <div class="container">
+      <div class="nav-content">
+        <a href="../index.html" class="back-button">
+          <i class="fas fa-arrow-left"></i>
+          Back to Portfolio
+        </a>
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="project-main container">
+    <!-- Header -->
+    <header class="project-header">
+      <span class="project-category">Teacher Records App</span>
+      <h1 class="project-title">Seva Book</h1>
+      <p class="project-subtitle">Digital teacher service book for viewing & managing service records with offline-first architecture</p>
+      
+      <div class="project-actions">
+        <a href="https://play.google.com/store/apps/details?id=com.tsm.bookseva" target="_blank" class="btn btn-primary">
+          <i class="fab fa-google-play"></i>
+          View on Play Store
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i>
+          Similar Project?
+        </a>
+      </div>
+    </header>
+
+    <!-- Stats -->
+    <div class="project-stats">
+      <div class="stat-card">
+        <i class="fas fa-download stat-icon"></i>
+        <span class="stat-number">6,500+</span>
+        <span class="stat-label">Downloads</span>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-star stat-icon"></i>
+        <span class="stat-number">4.6</span>
+        <span class="stat-label">Play Store Rating</span>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-clock stat-icon"></i>
+        <span class="stat-number">2.5</span>
+        <span class="stat-label">Months Development</span>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-sync-alt stat-icon"></i>
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Offline Capable</span>
+      </div>
+    </div>
+
+    <!-- Screenshots -->
+    <section class="screenshots-section">
+      <h2 class="section-title">App Screenshots</h2>
+      <div class="screenshot-grid">
+        <div class="screenshot-item">
+          <img src="../assets/screenshots/seva-book/01-home.png" alt="Home Screen">
+          <span class="screenshot-caption">Home Dashboard</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="../assets/screenshots/seva-book/02-records.png" alt="Records">
+          <span class="screenshot-caption">Service Records</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="../assets/screenshots/seva-book/03-details.png" alt="Details">
+          <span class="screenshot-caption">Record Details</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="../assets/screenshots/seva-book/04-sync.png" alt="Sync">
+          <span class="screenshot-caption">Sync Management</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section">
+      <h2 class="section-title">Key Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Offline-First Design</h3>
+          <p>Complete functionality without internet using local database storage with automatic sync.</p>
+          <div class="feature-tags">
+            <span class="feature-tag">Local Database</span>
+            <span class="feature-tag">Auto Sync</span>
+            <span class="feature-tag">Conflict Resolution</span>
+          </div>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-history"></i>
+          </div>
+          <h3>Service History Tracking</h3>
+          <p>Comprehensive tracking of teacher service records including transfers and promotions.</p>
+          <div class="feature-tags">
+            <span class="feature-tag">Timeline View</span>
+            <span class="feature-tag">Filter & Sort</span>
+            <span class="feature-tag">Export Reports</span>
+          </div>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-cloud-upload-alt"></i>
+          </div>
+          <h3>Seamless Sync</h3>
+          <p>Bi-directional sync between local database and cloud with intelligent conflict handling.</p>
+          <div class="feature-tags">
+            <span class="feature-tag">Bi-directional Sync</span>
+            <span class="feature-tag">Conflict Resolution</span>
+            <span class="feature-tag">Background Sync</span>
+          </div>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-bell"></i>
+          </div>
+          <h3>Push Notifications</h3>
+          <p>Real-time updates for new entries and important announcements using Firebase Cloud Messaging.</p>
+          <div class="feature-tags">
+            <span class="feature-tag">FCM Integration</span>
+            <span class="feature-tag">Custom Notifications</span>
+            <span class="feature-tag">In-app Alerts</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Implementation -->
+    <section class="tech-section">
+      <h2 class="section-title">Technical Implementation</h2>
+      
+      <div class="tech-stack">
+        <div class="tech-tags">
+          <span class="tech-tag">FlutterFlow</span>
+          <span class="tech-tag">Dart Custom Functions</span>
+          <span class="tech-tag">Firebase Firestore</span>
+          <span class="tech-tag">Local Database</span>
+          <span class="tech-tag">FCM</span>
+          <span class="tech-tag">Custom Widgets</span>
+          <span class="tech-tag">Offline Sync</span>
+        </div>
+      </div>
+
+      <div class="tech-details">
+        <h3><i class="fas fa-database"></i> Offline-First Architecture</h3>
+        <p>Implemented a sophisticated local database layer with intelligent caching strategies. The app prioritizes local data for performance while maintaining seamless cloud synchronization.</p>
+        <ul>
+          <li>Local-first data access for instant response</li>
+          <li>Optimistic updates with rollback capability</li>
+          <li>Intelligent conflict detection and resolution</li>
+          <li>Background sync with network optimization</li>
+        </ul>
+      </div>
+      
+      <div class="tech-details">
+        <h3><i class="fas fa-sync-alt"></i> Synchronization Engine</h3>
+        <p>Developed custom synchronization logic to handle bi-directional data flow between local storage and Firestore. Implemented differential sync to minimize data transfer.</p>
+        <ul>
+          <li>Timestamp-based change detection</li>
+          <li>Differential sync for efficiency</li>
+          <li>Manual and automatic sync modes</li>
+          <li>Sync status visualization</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- My Role -->
+    <section class="role-section">
+      <h2 class="section-title">My Role</h2>
+      
+      <div class="role-timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>UI/UX Design</h3>
+            <p>Designed and implemented the complete user interface with focus on simplicity and efficiency for teacher records management.</p>
+            <div class="timeline-skills">
+              <span class="skill-badge">UI Design</span>
+              <span class="skill-badge">UX Research</span>
+              <span class="skill-badge">Custom Widgets</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Offline Logic</h3>
+            <p>Developed complete offline-first architecture including local database setup, sync algorithms, and conflict resolution strategies.</p>
+            <div class="timeline-skills">
+              <span class="skill-badge">Local Database</span>
+              <span class="skill-badge">Sync Algorithms</span>
+              <span class="skill-badge">Dart Functions</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Deployment</h3>
+            <p>Conducted comprehensive testing including offline scenarios and sync reliability. Managed Play Store deployment and monitoring.</p>
+            <div class="timeline-skills">
+              <span class="skill-badge">Testing</span>
+              <span class="skill-badge">Play Store</span>
+              <span class="skill-badge">Monitoring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" id="contact">
+      <h2>Need an Offline-First Solution?</h2>
+      <p>Let's discuss how I can build a reliable, offline-capable application for your organization with seamless synchronization.</p>
+      <a href="../index.html#contact" class="btn btn-primary">
+        <i class="fas fa-paper-plane"></i>
+        Start Your Project
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="project-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="copyright">© <span id="current-year">2024</span> Your Name. All rights reserved.</p>
+        <a href="../index.html" class="footer-link">
+          <i class="fas fa-home"></i>
+          Back to Home
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme Toggle
+    const themeToggle = document.querySelector('.theme-toggle');
+    const themeIcon = document.querySelector('.theme-toggle i');
+    const body = document.body;
+    
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    body.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+    
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = body.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      body.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+      
+      themeToggle.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        themeToggle.style.transform = 'scale(1)';
+      }, 150);
+    });
+    
+    function updateThemeIcon(theme) {
+      if (theme === 'dark') {
+        themeIcon.className = 'fas fa-moon';
+      } else {
+        themeIcon.className = 'fas fa-sun';
+      }
+    }
+    
+    // Current Year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
